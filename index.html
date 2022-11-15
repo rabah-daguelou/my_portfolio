@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rabah Daguelou: Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <script type="module" src="index.js" defer></script>
+  <script type="module" src="projects.js" defer></script>
+</head>
+
+<body>
+  
+    <header>
+      <!-- Barre de navigation -->
+      <nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark">
+        
+        <!-- Brand Logo -->
+
+        <a class="navbar-brand logo" href="index.html">
+          <img src="./images/photo-identite.png" alt="Photo d'identité" style="width: 100px" />
+        </a>
+         <!-- My profil -->
+         <div class="myProfil">
+          <p>Rabah Daguelou</p>
+          <p> 06 51 93 18 44 </p>
+          <p> lounislina@yahoo.fr</p>
+        </div>
+        <!-- Toggler/collapsibe Button -->
+        <div class="navbar-toggler btn-humburger " data-toggle="collapse" data-target="#collapsibleNavbar" >
+          <!--<span class="navbar-toggler-icon icon"></span>-->
+          <span class="icon"></span>
+
+        </div>
+
+
+       
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse menu" id="collapsibleNavbar">
+
+          <ul class="navbar-nav mr-auto text-center ">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#"> Accueil </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#myProjects"> Projets </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./images/cv.pdf" target="_blank"> CV </a>
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#contact"> Contact </a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <!-- Fin barre de navigation -->
+    </header>
+
+    <!-- Fin header -->
+    <div class="pageBackground">
+    <!-- Animation enveloppes-->
+      <div class="animation_enveloppes">
+        
+        <div class="enveloppe enveloppe1">
+          <div class="side side1"></div>
+          <div class="side side2"></div>
+          <div class="face1"></div>
+          <div class="technologie"></div>
+        </div>
+        
+        <div class="enveloppe enveloppe2">
+          <div class="side side1"></div>
+          <div class="side side2"></div>
+          <div class="face2"></div>
+        </div >
+      
+      </div>
+      
+      <div class="myName">
+        <h2> Rabah Daguelou </h2>
+        <p> Développeur Web Junior </p>
+      </div>
+      
+      <div class="doing"></div>
+      
+      <!-- flèche vers le bas -->
+      <div class="bottom_arrow1"> 
+        <i class="fa-sharp fa-solid fa-circle-down"></i> 
+      </div>
+    </div>
+
+ 
+      
+      
+      
+
+  <!-- Fin animation enveloppes -->
+  <!-- Début Main -->
+  <main>
+    <section class="mySelf">
+    <h1 class="text-center" id="bonjour"> Bonjour </h1>
+
+    <div class="row">
+
+      <p class="col-md-7 m-auto about">
+        Je m'appelle Rabah Daguelou. J'ai 47 ans.
+        <br />
+        Je suis développeur Web fullstack junior. Très passionné par
+        l'informatique et les nouvelles technologies, j'ai suivi la formation
+        développeur web chez OpenClassrooms et je ne cesse de m'autoformer.
+      </p>
+
+      <blockquote class=" p-3 m-auto text-center bg-white myBlockquote">
+      </blockquote>
+
+    </div>
+
+    <div class="container col-md-2 p-6 mr-auto my_cv">
+      
+      <h2 class="text-center telecharge"> Télécharger mon CV </h2>
+      <a href="./images/cv.pdf" target="_blank">
+        <div class="cv">
+          
+            <i class="pdf fas fa-file-pdf"> </i>
+            <img src="./images/cv.png" alt="" style="width: 100px" />
+          
+        </div>
+      </a>
+      
+    </div>
+    
+  </section>
+
+<!-- Mes compétences -->
+    <section class=" my-skills">
+
+      <!-- Hard skills -->
+      
+      <div class="col text-center hard-skills">
+        <h2 class="text-center m-5"> Hard Skills </h2>
+
+        <div class=" row bar">
+          <p class=" col-5 html text-left mt-1"> <i class="fa-brands fa-html5"></i> HTML </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-html"> <span> 75 % </span> </div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 css text-left mt-1"> <i class="fab fa-css3-alt"></i> CSS </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-css"> <span> 75 % </span></div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 bootstrap text-left mt-1"> <i class="fab fa-bootstrap"></i> Bootstrap </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-bootstrap "> <span> 60 % </span></div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 javascript text-left pr-0 mt-1"> <i class="fab fa-js-square"></i> JavaScript </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-javascript"><span> 70 % </span> </div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 vuejs text-left mt-1"> <i class="fab fa-vuejs"></i> VueJs </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-vuejs"><span> 70 % </span> </div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 nodejs text-left mt-1"> <i class="fab fa-node-js"></i> NodeJs </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-nodejs"><span> 50 % </span> </div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 express text-left mt-1"> <i class="fab fa-js-square"></i> Express </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-express"> <span> 40 % </span></div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 mysql text-left mt-1"><i class="fas fa-database"></i> MySql </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-mysql"><span> 50 % </span> </div>
+          </div>
+        </div>
+
+        <div class=" row bar">
+          <p class="col-5 git text-left mt-1"> <i class="fab fa-github-square"></i> Git </p>
+          <div class=" col-7 progress mt-3 ">
+            <div class="progress-bar progress-git"><span> 60 % </span> </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="skills-message">
+        <p class="text-center mt-4"> Grâce à la pratique quasi quotidienne, notamment la réalisation de différents projets, ces compétences sont en constante progression... </p>
+      </div>
+
+      
+      <!-- Soft skills -->
+      <!-- 
+      <div class="col-md-6 p-2 soft-skills">
+        <h2 class="text-center "> Soft Skills </h2>
+      </div>
+    -->
+    </section>
+<!--   -->
+
+    <!-- Section Mes projets -->
+   
+    <section id="myProjects">
+      <h2 class="text-center mb-5"> Mes projets </h2>
+      <div id="projects"> </div>
+      <hr>
+      <h2> Autres petits projets </h2>
+
+      <div class="little-projects">
+       
+
+        <a href="https://rabah-daguelou.github.io/dagdev/" target="_blank">
+          <div class="little-projects-card DagDevBootstrap">
+            <img src="./images/DagDevBootstrap.PNG" alt="Site 100% Bootstrap">
+          </div>
+          <p class="DagDevBootstrap">Cours 100% Bootstrap</p>
+        </a>
+
+        <a href="https://rabah-daguelou.github.io/Mo-Immo/" target="_blank">
+          <div class="little-projects-card agence-moimmo">
+          <img src="./images/mo_immo.PNG" alt="Agence Mo Immo">
+          </div>
+          <p> Agence Mo Immo </p>
+        </a>
+
+        <a href="https://github.com/rabah-daguelou/kimshop.git" target="_blank">
+          <div class="little-projects-card kim-shop">
+          <img src="./images/kim-shop.PNG" alt="Kim Shopping">
+          </div>
+          <p>Kim Shop</p>
+        </a>
+
+        <a href="https://rabah-daguelou.github.io/horloge/" target="_blank">
+          <div class="little-projects-card horloge">
+          <img src="./images/horloge.PNG" alt="Horloge">
+          </div>
+          <p> Horloge </p>
+        </a>
+
+        <a href="https://rabah-daguelou.github.io/calculatrice/" target="_blank">
+          <div class="little-projects-card calculatrice">
+            <img src="./images/calculatrice.PNG" alt="Calculatrice">
+          </div>
+          <p>Calculatrice</p>
+        </a>
+        <a href="https://rabah-daguelou.github.io/chronometre/" target="_blank">
+          <div class="little-projects-card chronometre">
+            <img src="./images/chronometre.PNG" alt="Chronometre">
+          </div>
+          <p>Chronomètre</p>
+        </a>
+        <a href="https://rabah-daguelou.github.io/birthdayDay/" target="_blank">
+          <div class="little-projects-card jour">
+            <img src="./images/jour_naissance.PNG" alt="Jour de naissance">
+          </div>
+          <p>Jour naissance</p>
+        </a>
+        <a href="https://rabah-daguelou.github.io/maths/" target="_blank">
+          <div class="little-projects-card maths">
+            <img src="./images/maths.PNG" alt="Jeux de maths">
+          </div>
+          <p>Maths</p>
+        </a>
+        
+        <a href="https://rabah-daguelou.github.io/coeur/" target="_blank">
+          <div class="little-projects-card coeur">
+            <img src="./images/coeur.PNG" alt="">
+          </div>
+          <p>Coeur</p>
+        </a>
+        
+      </div>
+      <hr>
+      <h2> Autres petits projets Scratch</h2>
+
+      <div class="little-projects">
+       
+        <a href="./scratch-projects/calculs.html" target="_blank">
+          <div class="little-projects-card calculs">
+            <img src="./images/calculs.PNG" alt="">
+          </div>
+          <p>Calculs</p>
+        </a>
+
+        <a href="./scratch-projects/Jeu-espace.html" target="_blank">
+          <div class="little-projects-card jeu-espace">
+            <img src="./images/jeux-espace.PNG" alt="">
+          </div>
+          <p> Jeu d'espace </p>
+        </a>
+
+        <a href="./scratch-projects/regles-de-divisibilite.html" target="_blank">
+          <div class="little-projects-card regles-divisibilite">
+            <img src="./images/divisibilite.PNG" alt="">
+          </div>
+          <p class="divisibilite"> Règles divisibilité </p>
+        </a>
+
+        <a href="./scratch-projects/somme-de-n-nombres.html" target="_blank">
+          <div class="little-projects-card somme-de-n-nombres">
+            <img src="./images/somme-de-n-nombres.PNG" alt="">
+          </div>
+          <p class="somme"> Somme de N nombres </p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Fin main -->
+
+  <!-- Début footer -->
+  <footer>
+    <div class="container-fluid bg-dark text-white">
+
+      <div class="contact" id="contact">
+        <!-- infos contact-->
+        <div class="">
+          <h3 class=""><i class="fas fa-address-card"></i> Adresse</h3>
+          <p> Noisy le Sec. 93130</p>
+
+          <h3 class=""><i class="fas fa-phone"></i> Téléphone</h3>
+          <p> 06 51 93 18 44 </p>
+
+          <a href="mailto:lounislina@yahoo.fr">
+            <h3 class=""> <i class="fas fa-envelope"></i> Email </h3>
+            <p> lounislina@yahoo.fr </p>
+          </a>
+
+          <a href="https://linkedin.com/in/rabah-daguelou-68171520a" target="_blank">
+            <h3 class=""> <i class="fab fa-linkedin"></i> Linkedin </h3>
+            <p> linkedin.com/in/rabah-daguelou-68171520a </p>
+          </a>
+        </div>
+      
+        <!-- Formulaire de contact -->
+
+        <div class="form">
+          <h3> Me contacter ?</h3>
+          <form id="form_1" novalidate success-msg="Your message has been sent."
+            fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+
+            <div class="form-group">
+              <label> Nom </label>
+              <input id="name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label> Adresse email </label>
+              <input id="email" class="form-control" type="email" required />
+            </div>
+
+            <div class="form-group">
+              <label> Votre message </label>
+              <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+            </div>
+
+
+            <button class="form-group btn-lg btn-block " type="submit">
+              Envoyer
+            </button>
+
+          </form>
+        </div>
+        <!-- fin formulaire de contact-->
+
+      </div>
+      <p class="text-right copyright">
+        <i class="fas fa-copyright"></i> Rabah DAGUELOU. 2022.
+      </p>
+
+  </footer>
+
+  </div>
+  <!-- Fin footer -->
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

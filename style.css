@@ -1,0 +1,953 @@
+/* Général */
+*{
+  margin:o;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+/* header */
+
+ul li {
+  color: rgb(207, 51, 51);
+  margin-left: 20px;
+}
+ul li :hover {
+  
+  cursor: pointer;
+  color: rgb(255, 255, 255)!important;
+  text-shadow: 1px 1px 1px #0c0c0c;
+  font-weight: bold;
+  
+}
+/* My Profil */
+.myProfil {
+  color: #fff;
+  font-size: xx-small;
+  line-height: 2px;
+  padding-top: 12px;
+  letter-spacing: 1px;
+  margin-right: 60px;
+}
+
+
+/* button humburger */
+.btn-humburger{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bordure 2s infinite
+}
+
+@keyframes bordure {
+ 0%{
+    border-top-color: #fff;
+    
+  }
+  25% {
+    border-right-color: #fff;
+  
+  }
+  50% {
+    border-bottom-color: #fff;
+    
+  }
+  100% {
+    border-left-color: #fff;
+    
+  }
+}  
+.btn-humburger .icon {
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #fff;
+  transition: background-color 0s ease-in-out;
+}
+.btn-humburger .icon::before {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-color: #fff;
+  
+}
+.btn-humburger .icon::after {
+  content: "Menu";
+  font-size: 13px;
+}
+.btn-humburger .icon::before{
+  position: absolute;
+  transform: translateY(10px);
+}
+.btn-humburger .icon::after{
+  position: absolute;
+  transform: translateY(-15px);
+}
+.menuBackground {
+  background: rgb(95, 94, 94);
+  border-radius: 5px;
+  
+  
+}
+.active .icon{
+  background-color:transparent;
+}
+
+.active .icon::before{
+  
+  transform:translateY(0px) rotateZ(-40deg);
+  background-color: red;
+}
+.active .icon::after{
+  content:"";
+  display: block;
+  width: 90%;
+  height: 4px;
+  transform:translateY(0px) rotateZ(40deg);
+  background-color: red;
+}
+
+/* background Page */
+.pageBackground{
+  position: relative;
+  
+  
+  /* animation: glisse 20s alternate infinite;*/
+}
+
+/* background animation */
+.pageBackground::before{
+  content: "";
+  position: absolute;
+  box-shadow: -5px 5px 10px rgb(40, 39, 39);
+  background-size: cover;
+  animation: backgroundSlide 50s infinite ;
+}
+
+@keyframes  backgroundSlide {
+  0% {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/html.png");
+    z-index: -8;
+    opacity: .1;
+    }
+
+  10% {
+      z-index: -8;
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/html.png");
+      opacity:.3;
+    }
+  11% {
+    opacity: .2;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/css.png");
+}
+  20% {
+    opacity:.4;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/css.png");
+}
+21% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/js.png");
+}
+30% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/js.png");
+}
+31% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/bootstrap.png");
+}
+40% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/bootstrap.png");
+}
+41% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/sass.png");
+}
+50% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/sass.png");
+}
+51% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/vuejs.png");
+}
+
+60% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/vuejs.png");
+}
+61% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/nodejs.png");
+}
+70% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/nodejs.png");
+}
+71% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/expressjs.png");
+}
+80% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/expressjs.png");
+}
+81% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/mysql.png");
+}
+90% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/mysql.png");
+}
+91% {
+  opacity: .2;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/git.png");
+}
+100% {
+  opacity:.4;
+  z-index: -8;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/git.png");
+}
+
+}
+  
+/* green charge bar */
+.pageBackground::after{
+  content: "";
+  position: absolute;
+  animation: chargeBar 5s linear infinite ;
+  background-color:black;
+  height: 5px;
+}
+
+@keyframes chargeBar {
+  from {
+      width: 0%;   
+      top: 0px;
+      background-position: top left;
+      opacity: .5;
+  }
+  to {
+      width: 100%;
+      background-position: bottom right;
+      top: 0px;
+      opacity: 1;
+  }
+}
+
+
+/* My name alternate presentation*/
+.myName {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bolder;
+  text-shadow: 2px .5px 2px rgb(249, 246, 246);
+  background-color: rgb(208, 202, 202);
+  box-shadow: 2px 2px 20px;
+  border-radius: 5%;
+}
+
+/* What I do */
+
+.doing {
+  position: absolute;
+  bottom: 120px;
+  left:20%;
+  transform: translateX(-10%);
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 2px .5px 2px rgb(122, 120, 120);
+  font-weight: bold;
+}
+
+/** Animation enveloppes**/
+.animation_enveloppes {
+  height: 85vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+  padding-bottom: 20px;
+ 
+}
+.enveloppe {
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgb(145, 141, 141);
+  z-index: 0;
+}
+.enveloppe1 {
+  margin-right: 10px;
+}
+.side1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-bottom: 100px solid #ede8af;
+  border-right: 150px solid #f2f2f2;
+}
+
+.side2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-left: 150px solid transparent;
+  border-bottom: 100px solid #ede8af;
+  
+}
+.face1, .face2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0%;
+  left: 0%;
+  border-top: 50px solid rgb(214, 216, 162);
+  border-bottom: 50px solid transparent;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  transition: transform 1s;
+  transform-origin: top center;
+  
+}
+
+
+.technologie {
+  position: absolute;
+  top:-120%;
+  z-index: -1;
+  offset-path: path('M10 170 Q 95 20 170 150');
+}
+
+i {
+  font-size: 24px;
+}
+
+@keyframes fly {
+  from {
+      offset-distance: 0%;
+  }
+  to {
+     transform: scaleY(50px);
+     offset-distance: 100%; 
+     z-index: 8;
+     
+
+  }
+}
+
+/* bottom_arrow */
+
+.bottom_arrow1 {
+  color:black;
+  cursor: pointer;
+  text-align: center;
+  animation: arrow 1s reverse infinite;
+  position: absolute;
+  bottom: 50px;
+  left: 45%;
+}
+
+.bottom_arrow1 i {
+  font-size: 30px;
+}
+
+@keyframes arrow {
+  from {
+    transform: translateY(5px);
+  }
+}
+
+
+/* Fin animation enveloppes */
+
+main {
+  color: #fff;
+  background-image: linear-gradient(rgb(16, 16, 17), rgb(160, 165, 160));
+}
+
+
+/** My Self section */ 
+.mySelf {
+  padding-bottom: 40px;
+}
+/* Bonjour */
+
+#bonjour {
+  font-size: 2em;
+  padding:20px;
+  letter-spacing: 4px;
+  transition: all 1s 2s;
+}
+
+/* Desription */
+.about {
+  opacity: 0;
+  
+}
+.description {
+  opacity: 0;
+  padding: 10px 20px;
+  text-align: justify;
+  font-size: 2.8vw;
+  animation: description_slide 2s .7s both;
+  
+}
+@keyframes description_slide {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
+
+/* blockkote */
+blockquote {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px grey;
+  color: rgb(41, 39, 39);
+}
+blockquote span {
+  font-weight: 900;
+  display: block;
+  text-align: right;
+}
+
+/* cv */
+.my_cv{
+  width: 160px;
+  height: 220px;
+  margin: 20px auto;
+  padding-top: 10px;
+  box-shadow: 2px 2px 5px;
+  transition: transform .4s;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.my_cv h2 {
+   font-size: 13px;
+   
+}
+.cv img {
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px grey;
+  opacity: 0.5;
+}
+.my_cv:hover .cv{
+  transform: scale(1.2)
+} 
+
+
+.cv {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  
+}
+
+
+.cv .pdf {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  color: red;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.bottom_arrow2, .bottom_arrow3 {
+  color:#fff;
+  text-align: center;
+  animation: arrow 1s reverse infinite;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/***************************************/
+
+/***************************************/
+
+/* Skills */
+.my-skills {
+width: 100%;
+}
+.bar {
+  margin: -10px;
+}
+/* hard skills */
+
+.hard-skills {
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+}
+
+.progress {
+  width: 80%;
+  height: 12px;
+}
+
+.progress-bar span{
+  color: #fff;
+  z-index: 4;
+}
+.html i, .css i, .bootstrap i, .javascript i, .vuejs i, .nodejs i, .express i, .mysql i, .git i {
+  font-size: 24px;
+}
+.html i {
+  color: coral;
+}
+.css i {
+  color: rgb(59, 7, 248);
+}
+.bootstrap i {
+  color: rgb(192, 21, 183);
+}
+.javascript i {
+  color: rgb(145, 136, 20);
+}
+.vuejs i {
+  color: rgb(6, 138, 23);
+}
+.nodejs i {
+  color: rgb(37, 207, 22);
+}
+.express i {
+  color: rgb(177, 174, 6);
+}
+.mysql i {
+  color: rgb(64, 122, 230);
+}
+.git i {
+  color: rgb(16, 16, 17);
+}
+.progress-bar span {
+  line-height: 12px;
+}
+/* barre html */
+.progress-html {
+  width: 0px;
+  margin-left: -15px;
+  
+  height: 12px;
+  animation: progress-html 3s 1s both;
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+    color: grey;
+  }
+  
+  100% {
+    width: 90%;
+    background: coral;
+  }
+}
+
+/* barre css */
+.progress-css {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-css 3s 1s both;
+  }
+  @keyframes progress-css {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 90%;
+      background: rgb(32, 10, 231);
+    }
+  }
+/* barre bootstrap */
+.progress-bootstrap {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-bootstrap 3s 1s both;
+  }
+  @keyframes progress-bootstrap {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 70%;
+      background: rgb(248, 4, 228);
+      ;
+    }
+  }
+  /* barre javascript */
+.progress-javascript {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-javascript 3s 1s both;
+  }
+  @keyframes progress-javascript {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 80%;
+      background: rgb(154, 165, 7);
+      ;
+    }
+  }
+/* barre VueJs */
+.progress-vuejs {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-vuejs 3s 1s both;
+  }
+  @keyframes progress-vuejs {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width:80%;
+      background: rgb(15, 158, 22);
+      ;
+    }
+  }
+/* barre nodejs */
+.progress-nodejs {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-nodejs 3s 1s both;
+  }
+  @keyframes progress-nodejs {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width:60%;
+      background: rgb(14, 241, 45);
+    }
+  }
+/* barre express */
+.progress-express {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-express 3s 1s both;
+  }
+  @keyframes progress-express {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 50%;
+      background: rgb(154, 165, 7);
+      ;
+    }
+  }
+/* barre mysql */
+.progress-mysql {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-mysql 3s 1s both;
+  }
+  @keyframes progress-mysql {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 60%;
+      background: rgb(10, 131, 201);
+    }
+  }
+
+  /* barre git*/
+.progress-git {
+    width: 0px;
+    margin-left: -15px;
+    height: 12px;
+    animation: progress-git 3s 1s both;
+  }
+  @keyframes progress-git {
+    0% {
+      width: 0%;
+      color: grey;
+    }
+    
+    100% {
+      width: 70%;
+      background: rgb(8, 8, 8);
+    }
+  }  
+
+/* Soft skills */
+
+
+/* Projects */
+#myProjects {
+  padding-top: 20px;
+}
+.hard-skills h2, #myProjects h2, .little-projects h2 {
+  text-align: center;
+  text-shadow: 2px 1px 2px black;
+}
+#projects {
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.project {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+
+}
+
+.card {
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  border: 20px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: turn 40s linear infinite;
+}
+
+
+@keyframes turn {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.urlImage {
+  
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 20%;
+  
+  
+}
+
+#projects span {
+  position: absolute;
+  height: 145px;
+  color:rgb(249, 242, 242)
+}
+
+
+/* Little projects */
+
+.little-projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #000;
+}
+
+.little-projects-card {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 5px black;
+  
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.little-projects img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.little-projects p {
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+}
+.divisibilite, .somme, .DagDevBootstrap {
+  font-size: .7rem;
+}
+
+/* ---- Footer ---- */
+footer {
+  padding-bottom: 40px;
+}
+footer h3 {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: bold;
+}
+footer h3 i {
+  margin-right: 20px;
+  color:rgb(168, 164, 164);
+}
+footer p {
+  font-size: 0.8em;
+  color: rgb(168, 164, 164);
+}
+.form {
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  ul {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myProfil, .logo {
+    margin-right: 0px;
+  }
+  
+  .my-skills {
+    padding: 0 ;
+  }
+}
+@media screen and (min-width: 500px) {
+  .my-skills {
+    padding: 0 20% 0 20%;
+  }
+}
+
+
+/*  ****  */
+
+
